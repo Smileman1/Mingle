@@ -1,0 +1,16 @@
+# no .env files
+*.env
+
+#no nodemodule
+/client/node_modules
+/server/node_modules
+/node_modules
+/package.json
+/package.lock.json
+
+#no .env files
+/client/*.env
+/server/*.env
+
+#no idea file
+/*.idea

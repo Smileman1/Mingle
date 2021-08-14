@@ -1,0 +1,42 @@
+/*화면 px을 가로영역 420px 으로 큰틀을 잡았다*/
+.signup_content {
+    display: block;
+    margin: auto;
+    width: 420px;
+}
+/*윗부분 Logo 부분의 영역과 가운데 정렬을 해주는 부분*/
+.signup_logo_area{
+    height:25%;
+    font-size:0;
+    text-align: center;
+    min-height: 92px;
+}
+.signup_logo_area:after{
+    display:inline-block;
+    height:100%; content:"";
+    vertical-align:middle;
+}
+.signup_logo_area img{vertical-align:middle;}
+
+/*디자인적으로 margin값이 필요할때 사용하는 부분 (bottom)*/
+.signup_margin_bottom {
+    margin-bottom: 64px;
+}
+
+/*디자인적으로 margin값이 필요할때 사용하는 부분 (top)*/
+.signup_margin_top {
+    margin-top: 34px;
+}
+
+/*에러창이 표시되었을때 배율을 조정하는 부분(bottom)*/
+.singup_margin_error{
+    margin-bottom: -17px;
+}
+
+/*디자인적으로 submit 버튼에 영역을 나누는 부분*/
+.signup_submit_area{
+    margin-top : 56px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    width: 100%;
+}

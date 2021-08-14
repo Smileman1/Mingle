@@ -1,0 +1,5 @@
+/*메인 컨텐츠 작성 부분*/
+header + .content {
+    height: calc(100% - 64px);
+    width: 100%;
+}

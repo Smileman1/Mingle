@@ -1,0 +1,57 @@
+/*화면 px을 가로영역 420px 으로 큰틀을 잡았다*/
+.login_content {
+    display: block;
+    margin: auto;
+    width: 420px;
+}
+
+/*윗부분 Logo 부분의 영역과 가운데 정렬을 해주는 부분*/
+.login_logo_area{
+    height:25%;
+    font-size:0;
+    text-align: center;
+    min-height: 92px;
+}
+.login_logo_area:after{
+    display:inline-block;
+    height:100%; content:"";
+    vertical-align:middle;
+}
+.login_logo_area img{vertical-align:middle;}
+
+/*디자인적으로 margin값이 필요할때 사용하는 부분 (bottom)*/
+.login_margin_bottom {
+    margin-bottom: 68px;
+}
+
+.login_margin_top{
+    margin-top: 34px;
+}
+
+/*디자인적으로 submit 버튼에 영역을 나누는 부분*/
+.login_submit_area{
+    margin-top : 90px;
+    margin-bottom: 74px;
+    width: 100%;
+}
+
+/*아래쪽 footer를 가로로 일정하게 영역을 나누는 부분*/
+.login_footer_group{
+    display:flex;
+}
+
+/*footer그룹 안에있는 3가지 요소를 외관에 맞게 배치시켜주는 부분*/
+.login_footer_submit{
+    flex:1;
+    background-color: white;
+    text-align: start;
+}
+.login_footer_findID{
+    flex:1;
+    background-color: white;
+}
+.login_footer_findPW{
+    flex:1;
+    background-color: white;
+    text-align: end;
+}

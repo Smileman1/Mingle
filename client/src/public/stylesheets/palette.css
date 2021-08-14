@@ -1,0 +1,40 @@
+:root{
+    --color-bland-blue : #0000ff;
+    --color-bland-yellow : #ffd400;
+    --color-warning-red : #fb0000;
+    --color-black : #000000;
+    --color-heavy-gray : #4a4a4a;
+    --color-mid-gray : #b5b4b5;
+    --color-fog-gray : #f0f0f0;
+    --color-btn-gray : #b5b4b5;
+    --color-white :#ffffff;
+    --color-hover-blue: #3D3DFF;
+    --color-focus-blue: #6E6EFF;
+}
+
+
+:root{
+    --color-brandblue-default : #0000FF;
+    --color-brandblue-hover : #3D3DFF;
+    --color-brandblue-focus: #6E6EFF;
+    --color-brandblue-pressed: #0000C3;
+    --color-brandblue-disabled: #B5B4B5;
+
+    --color-grayline-default : #FFFFFF;
+    --color-grayline-hover : #F0F0F0;
+    --color-grayline-focus : #B5B4B5;
+    --color-grayline-pressed : #B5B4B5;
+    --color-grayline-disabled : #ABABAB;
+
+    --color-black-default : #000000;
+    --color-black-hover : #4A4A4A;
+    --color-black-focus : #838383;
+    --color-black-pressed : #4A4A4A;
+    --color-black-disabled : #838383;
+    --color-black-progress : #4A4A4A;
+
+
+}
+
+
+/* 3, 2, 1,  */

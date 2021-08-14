@@ -1,0 +1,42 @@
+@font-face {
+    font-family: "NotoSans-Regular";
+    src: url("../fonts/noto-sans-kr-v12/noto-sans-kr-v12-latin_korean-regular.woff2") format("woff2"),
+        /* Modern Browser */
+    url("../fonts/noto-sans-kr-v12/noto-sans-kr-v12-latin_korean-regular.woff") format("woff"),
+        /* Legacy iOS */
+    url("../fonts/noto-sans-kr-v12/noto-sans-kr-v12-latin_korean-regular.svg#NotoSansKR") format("svg"),
+        /* IE 9 Compat Modes */
+    url("../fonts/noto-sans-kr-v12/noto-sans-kr-v12-latin_korean-regular.eot"),
+        /* IE6-IE8 */
+    url("../fonts/noto-sans-kr-v12/noto-sans-kr-v12-latin_korean-regular.eot#iefix") format("embedded-opentype");
+    /* Safari, Android(4.4), iOS */
+    /*url("../../../public/fonts/Noto_Sans/NotoSans-Regular.ttf").format("truetype");*/
+}
+
+:root{
+    --font-16n : normal normal 16px NotoSans-Regular;
+    --font-16b : normal bold 16px NotoSans-Regular;
+    --font-14n : normal normal 14px NotoSans-Regular;
+    --font-14b : normal bold 14px NotoSans-Regular;
+    --font-12n : normal normal 12px NotoSans-Regular;
+    --font-12b : normal bold 12px NotoSans-Regular;
+    --font-9n : normal normal 9px NotoSans-Regular;
+    --font-9b : normal bold 9px NotoSans-Regular;
+}
+ .font-24b                {font: normal bold 24px NotoSans-Regular;}
+ .font-20n                {font: normal normal 20px NotoSans-Regular;}
+ .font-16n                {font: normal normal 16px NotoSans-Regular;}
+ .font-16b                {font: normal bold 16px NotoSans-Regular;}
+ .font-14n                {font: normal normal 14px NotoSans-Regular;}
+ .font-14b                {font: normal bold 14px NotoSans-Regular;}
+ .font-12n                {font: normal normal 12px NotoSans-Regular;}
+ .font-12b                {font: normal bold 12px NotoSans-Regular;}
+ .font-10n                 {font: normal normal 10px NotoSans-Regular;}
+ .font-10b                 {font: normal bold 10px NotoSans-Regular;}
+ .font-9n                 {font: normal normal 9px NotoSans-Regular;}
+ .font-9b                 {font: normal bold 9px NotoSans-Regular;}
+ .font-color-b {color : var(--color-black);}
+ .font-color-w {color : var(--color-white);}
+ .font-color-g {color : var(--color-btn-gray);}
+ .font-color-bu{color : var(--color-bland-blue);}
+ .font-color-r{color : var(--color-warning-red);}
