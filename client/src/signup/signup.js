@@ -42,6 +42,7 @@ class SignUpPage extends React.Component {
                             <input className={classNames('public_model_search_bar', 'font-14n')} type="active"/>
                         </div>
 
+                        
                         <div className={classNames('font-14b', 'font-color-bu', 'signup_margin_top')}>
                             아이디
                             <input className={classNames('public_model_search_bar', 'font-14n')} type="active"/>
