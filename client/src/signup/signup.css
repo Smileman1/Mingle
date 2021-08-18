@@ -1,22 +1,28 @@
-/*화면 px을 가로영역 420px 으로 큰틀을 잡았다*/
+/*화면 px을 가로영역 420px 으로 큰틀을 잡았다 => 전체 화면의 가운데 정렬 하는 방법을 변경을 하는 방법 참고 바람*/
 .signup_content {
-    display: block;
-    margin: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.signup_content > div {
     width: 420px;
+    height: 100%;
 }
-/*윗부분 Logo 부분의 영역과 가운데 정렬을 해주는 부분*/
-.signup_logo_area{
-    height:25%;
-    font-size:0;
-    text-align: center;
-    min-height: 92px;
+.signup_content > div > div {
+    width: 100%;
+    height: 100%;
 }
-.signup_logo_area:after{
-    display:inline-block;
-    height:100%; content:"";
-    vertical-align:middle;
+
+/*로고 영역*/
+.signup_logo_area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 77px;
+    margin-top: 105px;
 }
-.signup_logo_area img{vertical-align:middle;}
 
 /*디자인적으로 margin값이 필요할때 사용하는 부분 (bottom)*/
 .signup_margin_bottom {
@@ -26,6 +32,9 @@
 /*디자인적으로 margin값이 필요할때 사용하는 부분 (top)*/
 .signup_margin_top {
     margin-top: 34px;
+}
+.signup_margin_top_3 {
+    margin-top: 32px;
 }
 
 /*에러창이 표시되었을때 배율을 조정하는 부분(bottom)*/

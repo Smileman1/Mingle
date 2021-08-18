@@ -25,47 +25,48 @@ class SignUpPage extends React.Component {
     render() {
         return (
             <div className='main'>
-                <div className="signup_logo_area">
-                    <img
-                        src={ LogoImg }
-                        alt='testA' />
-                </div>
-
                 <div className='signup_content'>
+                    <div className="signup_logo_area">
+                        <img
+                            src={LogoImg}
+                            alt='testA'/>
+                    </div>
+
                     <div>
-                        <div className={classNames('font-24b', 'signup_margin_bottom')}>
-                            회원가입
-                        </div>
+                        <div>
+                            <div className='font-24b signup_margin_bottom'>
+                                회원가입
+                            </div>
 
-                        <div className={classNames('font-14b', 'font-color-bu')}>
-                            닉네임
-                            <input className={classNames('public_model_search_bar', 'font-14n')} type="active"/>
-                        </div>
+                            <div className={classNames('font-14b', 'font-color-bu')}>
+                                닉네임
+                                <input className={classNames('public_model_search_bar', 'font-14n')} type="active"/>
+                            </div>
 
-                        
-                        <div className={classNames('font-14b', 'font-color-bu', 'signup_margin_top')}>
-                            아이디
-                            <input className={classNames('public_model_search_bar', 'font-14n')} type="active"/>
-                        </div>
+                            <div className={classNames('font-14b', 'font-color-bu', 'signup_margin_top')}>
+                                아이디
+                                <input className={classNames('public_model_search_bar', 'font-14n')} type="active"/>
+                            </div>
 
-                        <div className={classNames('font-14n', 'font-color-b', 'signup_margin_top')}>
-                            비밀번호
-                            <input className={classNames('public_model_search_bar', 'font-14n')} type="password"/>
-                        </div>
+                            <div className={classNames('font-14n', 'font-color-b', 'signup_margin_top')}>
+                                비밀번호
+                                <input className={classNames('public_model_search_bar', 'font-14n')} type="password"/>
+                            </div>
 
-                        <div className={classNames('font-14n', 'font-color-b', 'signup_margin_top')}>
-                            비밀번호 확인
-                            <input className={classNames('public_model_search_bar', 'font-14n')} type="error"/>
-                        </div>
-                        <div className={classNames('font-10n', 'font-color-r', 'singup_margin_error')}>
-                            다시 확인해 주세요.
-                        </div>
-                        <div className={classNames('font-14n', 'font-color-g', 'signup_margin_top')}>
-                            이메일
-                            <input className={classNames('public_model_search_bar', 'font-14n')} type="hover"/>
-                        </div>
-                        <div >
-                            <button className={classNames('public_brandblue_btn', 'font-14n', 'font-color-w',"signup_submit_area")}type="bigBtn">확인</button>&nbsp;&nbsp;
+                            <div className={classNames('font-14n', 'font-color-b', 'signup_margin_top_3')}>
+                                비밀번호 확인
+                                <input className={classNames('public_model_search_bar', 'font-14n')} type="error"/>
+                            </div>
+                            <div className={classNames('font-10n', 'font-color-r', 'singup_margin_error')}>
+                                다시 확인해 주세요.
+                            </div>
+                            <div className={classNames('font-14n', 'font-color-g', 'signup_margin_top')}>
+                                이메일
+                                <input className={classNames('public_model_search_bar', 'font-14n')} type="hover"/>
+                            </div>
+                            <div >
+                                <button className={classNames('public_brandblue_btn', 'font-14n', 'font-color-w',"signup_submit_area")}type="bigBtn">확인</button>&nbsp;&nbsp;
+                            </div>
                         </div>
                     </div>
                 </div>
