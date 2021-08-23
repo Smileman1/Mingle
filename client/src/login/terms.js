@@ -40,7 +40,7 @@ class terms extends React.Component {
                             <div className={classNames('font-12n','terms_check_agreement')}>
                                 <div>동의하시겠습니까?</div>
                                 <input type='radio'name='firstTerms' value='yes'/>예
-                                <input type='radio' name='firstTerms' value='no'/>아니오
+                                <input type='radio' name='firstTerms' value='no' defaultChecked/>아니오
                             </div>
 
                             <div className='terms_titles'>
@@ -53,7 +53,7 @@ class terms extends React.Component {
                             <div className={classNames('font-12n','terms_check_agreement')}>
                                 <div>동의하시겠습니까?</div>
                                 <input type='radio'name='secondTerms' value='yes'/>예
-                                <input type='radio' name='secondTerms' value='no'/>아니오
+                                <input type='radio' name='secondTerms' value='no' defaultChecked/>아니오
                             </div>
 
                             <div className='terms_titles'>
@@ -65,15 +65,15 @@ class terms extends React.Component {
                             <div className={classNames('font-12n','terms_check_agreement')}>
                                 <div>동의하시겠습니까?</div>
                                 <input type='radio'name='thirdTerms' value='yes'/>예
-                                <input type='radio' name='thirdTerms' value='no'/>아니오
+                                <input type='radio' name='thirdTerms' value='no' defaultChecked/>아니오
                             </div>
                             <div className='terms_warning'>
                                 필수 약관에 모두 동의해 주세요.
                             </div>
                             <div className='terms_foot'>
                                 <span>전체 동의 하시겠습니까?</span>
-                                <input type='radio'name='secondTerms' value='yes'/><div className='terms_all_agreement'>예</div>
-                                <input type='radio' name='secondTerms' value='no'/><div className='terms_all_agreement'>아니오</div>
+                                <input type='radio'name='fourthTerms' value='yes'/><div className='terms_all_agreement'>예</div>
+                                <input type='radio' name='fourthTerms' value='no' defaultChecked/><div className='terms_all_agreement'>아니오</div>
                                 <button className={classNames('public_brandblue_btn', 'terms_submit')}><Link className='font-14n font-color-w' to='/signup'>확인</Link></button>
                             </div>
 

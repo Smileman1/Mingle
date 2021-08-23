@@ -13,22 +13,18 @@ import LogoImg from '../img/tmp.png';
 
 
 class LoginPage extends React.Component {
-
     constructor() {
         super(undefined);
         this.function=new LoginFuntion();
+        //첫번째 문단은 input값에 입력된 값들
+        //두번째 문단은 db를 거치기전 올바른 값인지 1차적으로 확인한 결과를 저장하는 부분이다.
         this.state = {
-            id_error : false,
-            pw_error : false,
-        }
-    }
+            login_id : "",
+            login_pw : "",
 
-    // input에 입력한 값이 올바른 값인지 확인하는 함수 (이걸 f_login.js에 넣을려고 했는데 현재 state값을 변동시켜야해서 잠시 보류)
-    login_Checksum(){
-        this.setState({
-            id_error : this.function.login_id_Checksum(),
-            pw_error : this.function.login_pw_Checksum()
-        })
+            login_id_type : "hover",
+            login_pw_type : "hover"
+        }
     }
 
     render() {
@@ -46,19 +42,19 @@ class LoginPage extends React.Component {
                                 <div className={classNames('font-24b', 'login_margin_bottom')}>
                                     로그인
                                 </div>
-
-                                <div className={classNames('font-14n', 'font-color-g', 'login_margin_top')}>
+                                <div className= {this.state.login_id_type==="error" ? classNames('font-14b','font-color-r', 'login_margin_top') : classNames('font-14n','font-color-g', 'login_margin_top')}>
                                     아이디
                                     <input
                                         className={classNames('public_model_search_bar', 'font-14n')}
-                                        type={this.state.id_error ? "error" : "hover"}
+                                        type = {this.state.login_id_type}
+                                        onFocus={this.function.login_Id_Focus.bind(this)}
                                         id="login_userId"
-                                        onChange={this.function.idChange}
+                                        onChange={this.function.login_Id_Change.bind(this)}
                                     />
                                 </div>
 
                                 {/*아이디 부분에서 checksum error가 일어났을 경우 경고창을 표시하는 부분*/}
-                                {this.state.id_error ?
+                                {this.state.login_id_error ==="error" ?
                                     <div className={classNames('font-10n', 'font-color-r', 'login_margin_error')}>
                                         다시 확인해 주세요.
                                     </div> :
@@ -67,18 +63,19 @@ class LoginPage extends React.Component {
                                     </div> }
 
 
-                                <div className={classNames('font-14n', 'font-color-g', 'login_margin_top')}>
+                                <div className= {this.state.login_pw_type === "error" ? classNames('font-14b','font-color-r', 'login_margin_top') : classNames('font-14n','font-color-g', 'login_margin_top')}>
                                     비밀번호
                                     <input
-                                        className={this.state.pw_error? classNames('login_input_error', 'font-14n') : classNames('login_input_hover', 'font-14n')}
-                                        type="password"
+                                        className={classNames('public_model_search_bar', 'font-14n', 'login_password')}
+                                        type={this.state.login_pw_type}
+                                        onFocus={this.function.login_Pw_Focus.bind(this)}
                                         id="login_userPw"
-                                        onChange={this.function.pwChange}
+                                        onChange={this.function.login_Pw_Change.bind(this)}
                                     />
                                 </div>
 
                                 {/*비밀번호 부분에서 checksum error가 일어났을 경우 경고창을 표시하는 부분*/}
-                                {this.state.pw_error ?
+                                {this.state.login_pw_type === "error" ?
                                     <div className={classNames('font-10n', 'font-color-r', 'login_margin_error')}>
                                         다시 확인해 주세요.
                                     </div> :
@@ -90,7 +87,7 @@ class LoginPage extends React.Component {
                                     <button
                                         className={classNames('public_brandblue_btn', 'font-14n', 'font-color-w',"login_submit_area")}
                                         type="bigBtn"
-                                        onClick={this.login_Checksum.bind(this)}
+                                        onClick={this.function.login_Checksum.bind(this)}
                                     >확인</button>&nbsp;&nbsp;
                                 </div>
 
@@ -107,7 +104,8 @@ class LoginPage extends React.Component {
             </div>
         )
     }
-
 }
+
+
 
 export default LoginPage;

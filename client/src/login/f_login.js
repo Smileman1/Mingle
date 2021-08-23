@@ -7,55 +7,64 @@ const http=new HttpClient(serverURl);
 //log in 페이지 기능들을 모아두는 파일
 
 
-var login_id = ""
-var login_pw = ""
-
 export default class LoginFuntion {
     //function 작성하기
 
+
     //id input값에 입력값이 있을때 마다 login_id값이 업데이트 시키는 부분
-    idChange = (e) => {
-        login_id = e.target.value
-    };
-
-    //pw input값에 입력값이 있을때 마다 login_pw값이 업데이트 시키는 부분
-    pwChange = (e) => {
-        login_pw = e.target.value
-    };
-
-    //login_id 값이 db로 검색되기전에 1차적으로 검토를 하는 부분 (규칙은 5글자 이상이면서 문자와 숫자로 이루어진 문자열이여야한다.)
-    login_id_Checksum(){
-        var num = false
-        var char = false
-        var other = false
-
-        for (var x = 0 ; x<login_id.length ; x++){
-            if((login_id.charCodeAt(x)>=65 && login_id.charCodeAt(x)<=90) || (login_id.charCodeAt(x)>=97 && login_id.charCodeAt(x)<=122))
-                char = true
-            else if(login_id.charCodeAt(x)>=48 && login_id.charCodeAt(x)<=57)
-                num = true
-            else
-                other = true
-        }
-
-        return login_id.length < 5 || other || (char && num) === false;
+    login_Id_Change(e) {
+        this.setState({
+            login_id: e.target.value
+        })
     }
 
-    //login_pw 값이 db로 검색되기전에 1차적으로 검토를 하는 부분 (규칙은 5글자 이상이면서 문자와 숫자로 이루어진 문자열이여야한다.)
-    login_pw_Checksum(){
-        var num = false
-        var char = false
-        var other = false
+    //pw input값에 입력값이 있을때 마다 login_pw값이 업데이트 시키는 부분
+    login_Pw_Change(e) {
+        this.setState({
+            login_pw: e.target.value
+        })
+    }
 
-        for (var x = 0 ; x<login_pw.length ; x++){
-            if((login_pw.charCodeAt(x)>=65 && login_pw.charCodeAt(x)<=90) || (login_pw.charCodeAt(x)>=97 && login_pw.charCodeAt(x)<=122))
-                char = true
-            else if(login_pw.charCodeAt(x)>=48 && login_pw.charCodeAt(x)<=57)
-                num = true
-            else
-                other = true
+    //각각의 input이 focus되면 실행되는 함수를 모아둔것 state에 저장된 각 type들을 focus로 바꾸어 화면의 input값을 파란색으로 바꾼다.
+    login_Id_Focus(e){
+        this.setState({
+            login_id_type : "focus"
+        })
+    }
+    login_Pw_Focus(e){
+        this.setState({
+            login_pw_type : "focus"
+        })
+    }
+
+
+    login_Checksum(){
+
+        if (this.function.login_pw_Checksum(this.state.login_id) === "hover" &&
+            this.function.login_pw_Checksum(this.state.login_pw) === "hover"){
+            alert("입력값에 문제가 없습니다.")
+        }else{
+            alert("다시 입력해주세요.")
         }
 
-        return login_pw.length < 5 || other || (char && num) === false;
+        this.setState({
+            login_id_type : this.function.login_id_Checksum(this.state.login_id),
+            login_pw_type : this.function.login_pw_Checksum(this.state.login_pw)
+        })
+
+    }
+
+    //login_id 값이 db로 검색되기전에 1차적으로 검토를 하는 부분
+    login_id_Checksum(login_id){
+        if(login_id.length < 3 || login_id.length >32)
+            return "error"
+        return "hover"
+    }
+
+    //login_pw 값이 db로 검색되기전에 1차적으로 검토를 하는 부분
+    login_pw_Checksum(login_pw){
+        if(login_pw.length < 3 || login_pw.length >32)
+            return "error"
+        return "hover"
     }
 }

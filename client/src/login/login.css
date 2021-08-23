@@ -63,6 +63,10 @@
     box-sizing: border-box;
 }
 
+.login_password{
+    -webkit-text-security: disc;
+}
+
 /*디자인적으로 submit 버튼에 영역을 나누는 부분*/
 .login_submit_area{
     margin-top : 90px;

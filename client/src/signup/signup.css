@@ -49,3 +49,7 @@
     padding-bottom: 0;
     width: 100%;
 }
+
+.signup_password{
+    -webkit-text-security: disc;
+}

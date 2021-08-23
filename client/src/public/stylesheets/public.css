@@ -281,7 +281,7 @@ input::placeholder {
     line-height: 20px;
     width: 420px;
     height: 36px;
-    background-color: var(--color-fog-gray);
+    background-color: var(--color-white);
     border-bottom: 1px solid var(--color-mid-gray);
     padding-left: 19px;
     box-sizing: border-box;
@@ -301,7 +301,7 @@ input::placeholder {
 
 .public_model_search_bar[type="active"]{
     background-color: var(--color-white);
-    border-bottom: 2px solid var(--color-bland-blue);
+    border-bottom: 1.5px solid var(--color-bland-blue);
     box-sizing: border-box;
 }
 
@@ -313,7 +313,7 @@ input::placeholder {
 
 .public_model_search_bar[type="error"]{
     background-color: var(--color-white);
-    border-bottom: 2px solid var(--color-warning-red);
+    border-bottom: 1.5px solid var(--color-warning-red);
     box-sizing: border-box;
 }
 
@@ -323,11 +323,7 @@ input::placeholder {
     box-sizing: border-box;
 }
 
-.public_model_search_bar[type="password"]{
-    background-color: var(--color-white);
-    border-bottom: 2px solid var(--color-bland-blue);
-    box-sizing: border-box;
-}
+
 
 
 
