@@ -1,5 +1,78 @@
 /*메인 컨텐츠 작성 부분*/
-header + .content {
-    height: calc(100% - 64px);
+.main_search{
+    display: flex;
+    justify-content: space-between;
+    margin: 0px auto;
+    width: 1195px;
+    height: 100%;
+    margin-top:29px;
+    padding-left:60px;
+}
+
+.main_contents{
+    display: flex;
+    justify-content: space-between;
+    margin: 0px auto;
+    width: 1195px;
+    height: 100%;
+    margin-top: 51px;
+    padding-left: 60px;
+    flex-direction: column;
+
+    white-space: nowrap;
+}
+
+.main_contents_title{
+    display: flex;
+    justify-content: space-between;
     width: 100%;
+    margin-bottom: 23px;
+}
+
+.main_contents_post{
+    display: flex;
+    margin-bottom: 81px;
+}
+
+.main_post{
+    cursor: pointer;
+    margin-right: 30px;
+}
+
+.main_post_title{
+    font-size:16px;
+    font-weight: 700;
+}
+
+.main_post_title_div{
+    margin-top:17px;
+    margin-bottom:40px;
+}
+
+.main_post_detail{
+    display: flex;
+    justify-content: space-between;
+}
+
+.main_post_detail > label > span{
+    font-size: 14px;
+    font-weight: 700;
+    margin-left:4px;
+    margin-right: 6px;
+}
+
+.main_post_detail > span{
+    color:#B5B4B5;
+}
+
+.main_contents_popular > span{
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.main_contents_search{
+    border:1px solid #C4C4C4;
+    width: 161px;
+    height: 40px;
+    padding: 2px 2px 2px 10px;
 }

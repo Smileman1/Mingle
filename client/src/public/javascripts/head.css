@@ -1,0 +1,28 @@
+.header_left{
+    display: flex;
+    align-items: center;
+}
+
+.header_left > img{
+    margin-right: 66px;
+}
+
+#main_write_note{
+    margin-right: 46px;
+}
+
+.gradient_bar{
+    width: 1980px;
+    height: 42px;
+    background: linear-gradient(180deg, rgba(181, 180, 181, 0.5) 0%, rgba(181, 180, 181, 0) 50%);
+    opacity: 0.5;
+}
+
+.header_right{
+    display: flex;
+}
+
+.header_right > img{
+    cursor: pointer;
+    margin-left:30px;
+}

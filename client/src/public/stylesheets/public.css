@@ -256,6 +256,22 @@ input::placeholder {
     align-items: center;
 }
 
+
+.public_main_search_div{
+    line-height: 19px;
+    width: 1192px;
+    height: 40px;
+    border: 1px solid var(--color-mid-gray);
+    box-sizing: border-box;
+    border-radius: 20px 0px 0px 20px;
+    padding: 5px 3px;
+    text-indent: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
 .public_big_search_bar{
     line-height: 19px;
     width: 900px;
@@ -266,12 +282,39 @@ input::placeholder {
     /* text-indent: 17px; */
 }
 
+.public_main_search_bar{
+    line-height: 19px;
+    width: 1140px;
+    height: 32px;
+    box-sizing: border-box;
+    border: 0px;
+    padding-left:14px;
+    padding: 0px 14px;
+}
+
+/* .public_main_search_bar:hover{
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.public_main_search_bar:focus-within{
+    border: 1.5px solid var(--color-bland-blue);
+    box-shadow: 0px 2px 5px rgba(0, 0, 255, 0.7);
+} */
 
 .public_big_search_div:hover{
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.7);
 }
 
 .public_big_search_div:focus-within{
+    border: 1.5px solid var(--color-bland-blue);
+    box-shadow: 0px 2px 5px rgba(0, 0, 255, 0.7);
+}
+
+.public_main_search_div:hover{
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.public_main_search_div:focus-within{
     border: 1.5px solid var(--color-bland-blue);
     box-shadow: 0px 2px 5px rgba(0, 0, 255, 0.7);
 }
@@ -324,6 +367,52 @@ input::placeholder {
 }
 
 
+.public_comments_search_bar{
+    line-height: 20px;
+    width: 733px;
+    height: 36px;
+    background-color: var(--color-white);
+    border-bottom: 1px solid var(--color-mid-gray);
+    padding-left: 19px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.public_comments_search_bar:hover{
+    background-color: var(--color-white);
+    border-bottom: 1px solid var(--color-black);
+    box-sizing: border-box;
+}
+
+.public_comments_search_bar:focus{
+    background-color: var(--color-white);
+    border-bottom: 1px solid var(--color-bland-blue);
+    box-sizing: border-box;
+}
+
+.public_comments_search_bar[type="active"]{
+    background-color: var(--color-white);
+    border-bottom: 1px solid var(--color-bland-blue);
+    box-sizing: border-box;
+}
+
+.public_comments_search_bar[type="failed"]{
+    background-color: var(--color-white);
+    border-bottom: 1px solid var(--color-warning-red);
+    box-sizing: border-box;
+}
+
+.public_comments_search_bar[type="error"]{
+    background-color: var(--color-white);
+    border-bottom: 1px solid var(--color-warning-red);
+    box-sizing: border-box;
+}
+
+.public_comments_search_bar[type="hover"]{
+    background-color: var(--color-white);
+    border-bottom: 0.5px solid var(--color-mid-gray);
+    box-sizing: border-box;
+}
 
 
 
