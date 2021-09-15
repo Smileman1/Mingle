@@ -27,7 +27,8 @@ time, mark, audio, video {
 html, body, #root{
     width: 100%;
     height: 100%;
-    /*overflow: hidden;*/
+    min-width: 1216px;
+        /*overflow: hidden;*/
     font: var(--font-14n);
 }
 #root > .main {

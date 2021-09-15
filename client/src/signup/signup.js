@@ -39,12 +39,10 @@ class SignUpPage extends React.Component {
         return (
             <div className='main'>
                 <div className='signup_content'>
-                    <div className="signup_logo_area">
                         <img
+                            className='signup_logo_size'
                             src={LogoImg}
                             alt='testA'/>
-                    </div>
-
                     <div>
                         <div>
                             <div className='font-24b signup_margin_bottom'>

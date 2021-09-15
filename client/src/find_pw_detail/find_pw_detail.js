@@ -2,8 +2,8 @@
 
 import React from 'react';
 import { Link } from 'react-router-dom'
-import './login.css';
-import LoginFuntion from './f_login.js';
+import './find_pw_detail.css';
+import FindPwDetailFuntion from './f_find_pw_detail';
 
 //css class를 여러개 수용할수 있게 도와주는 classNames
 import classNames from 'classnames';
@@ -12,24 +12,22 @@ import classNames from 'classnames';
 import LogoImg from '../img/tmp.png';
 
 
-class find_pw_detail extends React.Component {
+class FindPwDetailPage extends React.Component {
 
     constructor() {
         super(undefined);
-        this.function=new LoginFuntion();
+        this.function=new FindPwDetailFuntion();
     }
 
     render() {
         return (
             <div className='main'>
-                <div className='login_main'>
-                    <div className="login_logo_area">
+                <div className='findpw_detail_content'>
                         <img
+                            className='findpw_detail_logo_size'
                             src={ LogoImg }
                             alt='testA' />
-                    </div>
-
-                    <div className='findpw_detail_content'>
+                    <div>
                         <div>
                             <div className={classNames('font-24b', 'findpw_margin_bottom')}>
                                 비밀번호 찾기
@@ -78,4 +76,4 @@ class find_pw_detail extends React.Component {
 
 }
 
-export default find_pw_detail;
+export default FindPwDetailPage;

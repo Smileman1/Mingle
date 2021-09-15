@@ -12,7 +12,7 @@
 }
 
 .gradient_bar{
-    width: 1980px;
+    width: 100%;
     height: 42px;
     background: linear-gradient(180deg, rgba(181, 180, 181, 0.5) 0%, rgba(181, 180, 181, 0) 50%);
     opacity: 0.5;
@@ -25,4 +25,126 @@
 .header_right > img{
     cursor: pointer;
     margin-left:30px;
+}
+
+.header_content{
+    width: 1195px;
+}
+
+.header_profile_menu{
+    width: 40px;
+    height: 40px;
+}
+
+.header_profile_menu_first{
+    width: 40px;
+    height: 40px;
+}
+
+.header_logo_size{
+    width: 110px;
+    height: 64px;
+    margin-right: 66px;
+}
+
+/* 프로필 모달창 */
+.profile_button{
+    position: relative;
+    cursor: pointer;
+    background-color: #ffffff;
+}
+
+.profile_modal{
+    display: none;
+    position: absolute;
+    z-index: 2000;
+    right: 20px;
+    width: 250px;
+    height: 307px;
+    box-sizing: border-box;
+    border: 1px solid rgba(0,0,0,0.25);
+    box-shadow: 2px 4px 8px 0px #00000040;
+    border-radius: 8px;
+    cursor:initial;
+
+    background-color: #ffffff;
+}
+
+.profile_button > .profile_modal_activation{
+    display: block;
+}
+
+
+
+.profile_modal_head{
+    display: flex;
+    align-items: center;
+    margin-bottom: 28px;
+    padding: 17px 17px;
+}
+
+.header_profile_menu{
+    margin-right: 14px;
+}
+
+.profile_head_who{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.profile_head_who > span{
+    font-size:16px;
+    font-weight: 700;
+    line-height: 21px;
+    color:#4A4A4A;
+}
+
+.profile_head_who > label{
+    font-size:12px;
+    font-weight: 400;
+    color:#4A4A4A;
+}
+
+.header_body_img{
+    width: 12px;
+    height: 12px;
+}
+
+.profile_modal_body{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-bottom: 39px;
+
+    height: 123px;
+    background-color: #f0f0f0;
+
+}
+
+.profile_body_head, .profile_body_body, .profile_body_foot{
+    padding: 11px 17px;
+}
+
+.header_body_img{
+    margin-right: 6.5px;
+}
+
+.header_body_span{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19px;
+}
+
+.profile_modal_foot{
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 17px;
+}
+
+.profile_modal_foot > span{
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    color:#b5b4b5;
 }

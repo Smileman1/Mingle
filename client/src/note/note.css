@@ -65,7 +65,8 @@
 }
 
 .note_profileImage_margin{
-    margin-bottom: -4px;
+    margin-bottom: -2px;
+
 }
 
 .note_comments{
@@ -82,3 +83,7 @@
     margin-top: 13px;
 }
 
+.note_header_profile_img{
+    width: 16px;
+    height: 15px;
+}

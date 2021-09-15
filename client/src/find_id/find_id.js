@@ -2,8 +2,8 @@
 
 import React from 'react';
 import { Link } from 'react-router-dom'
-import './login.css';
-import LoginFuntion from './f_login.js';
+import './find_id.css';
+import FindIdFuntion from './f_find_id.js';
 
 //css class를 여러개 수용할수 있게 도와주는 classNames
 import classNames from 'classnames';
@@ -12,24 +12,23 @@ import classNames from 'classnames';
 import LogoImg from '../img/tmp.png';
 
 
-class find_id extends React.Component {
+class FindIdPage extends React.Component {
 
     constructor() {
         super(undefined);
-        this.function=new LoginFuntion();
+        this.function=new FindIdFuntion();
     }
 
     render() {
         return (
             <div className='main'>
-                <div className='login_main'>
-                    <div className="login_logo_area">
+                <div className='findid_content'>
                         <img
+                            className='findid_logo_size'
                             src={ LogoImg }
                             alt='testA' />
-                    </div>
 
-                    <div className='findid_content'>
+                    <div >
                         <div>
                             <div>
                                 <div className={classNames('font-24b', 'findid_margin_bottom')}>
@@ -64,4 +63,4 @@ class find_id extends React.Component {
 
 }
 
-export default find_id;
+export default FindIdPage;

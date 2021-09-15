@@ -1,0 +1,77 @@
+
+.findpw_detail_content{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.findpw_detail_content > div {
+    width: 420px;
+    height: 100%;
+}
+.findpw_detail_content > div > div {
+    width: 100%;
+    height: 100%;
+}
+
+.findpw_margin_bottom{
+    margin-bottom: 68px;
+}
+
+.findpw_margin_top{
+    position: relative;
+    margin-top: 34px;
+
+}
+
+.findpw_sendCode{
+    left:330px;
+    position: absolute;
+    border:1px solid #B5B4B5;
+    width:93.5px;
+    height: 23px;
+    font-size: 12px;
+    font-weight: bold;
+    background-color:#ffffff;
+    border-radius: 15px;
+}
+
+.findpw_content > div > div > button > a{
+    color:#ffffff;
+}
+
+.findpw_detail_confirmcode{
+    display: flex;
+}
+
+.findpw_detail_confirmcode > div{
+    color: #ff0000;
+    margin-top:5px;
+    font-size: 10px;
+}
+
+.findpw_detail_confirmcode > span{
+    right: 0px;
+    margin-top:6px;
+    margin-left: 246px;
+}
+
+.findpw_detail_confirmPw > div{
+    color:#ff0000;
+    margin-top:5px;
+    font-size: 10px;
+}
+
+.findpw_detail_submit{
+    margin-top : 70px;
+    width: 100%;
+}
+
+.findpw_detail_logo_size{
+    width: 158px;
+    height: 92px;
+    margin-bottom: 77px;
+}

@@ -14,30 +14,73 @@ import like from '../img/like.png';
 import view from '../img/view.png';
 
 import search from '../img/search.png';
+import img_filter from '../public/icon/etc..px/filter icon.png';
+import TermsModal from "../terms/terms";
+
 
 class MainPage extends React.Component {
 
     constructor() {
         super(undefined);
         this.function=new MainFuntion();
+        this.state = {
+            isModalOpen: false,
+        };
     }
-    
+
     render() {
         return (
             <div className='main'>
-                <Header />
+                <Header main_openModal={this.function.main_openModal.bind(this)} m_page={this} />
                 {/* l-o-l */}
                 <div className="main_body">
+
                     <div className='main_search'>
-                        <div className={classNames('public_main_search_div', 'font-14n')}>
-                            <img src={search}/>
-                            <input className={classNames('public_main_search_bar', 'font-14n')} placeholder="검색어를 입력하세요"/>
-                        </div>                
+                        <div className={classNames('main_search_div', 'font-14n')}>
+                            <img
+                                className={classNames('margin-l-15')}
+                                src={search}
+                            />
+                            <input className={classNames('main_search_bar', 'font-14n')} placeholder="검색어를 입력하세요"/>
+                        </div>
+                        <div className={'main_searchBox_icon_area'}>
+                            <div className={classNames('margin-l-13', 'margin-r-100')}>
+                                전체
+                            </div>
+                            <img
+                                src={img_filter}
+                            />
+                        </div>
                     </div>
+
                     <div className='main_contents'>
                         <div className="main_contents_title">
                             <div className="main_contents_popular"><span>인기 게시글</span></div>
-                            <input className="main_contents_search" placeholder="전체"></input>
+                            <div className='main_filter_contain'>
+                                <div className={classNames('main_filter_area', 'margin-r-21')}>
+                                    <div className={classNames('font-14n', 'margin-l-16','margin-r-100')}>
+                                        전체
+                                    </div>
+                                    <div>
+                                        <img
+                                            className={classNames('margin-b-2')}
+                                            src={img_filter}
+                                        />
+                                    </div>
+                                </div>
+
+                                <div className={classNames('main_filter_area')}>
+                                    <div className={classNames('font-14n', 'margin-l-16','margin-r-100')}>
+                                        전체
+                                    </div>
+                                    <div>
+                                        <img
+                                            className={classNames('margin-b-2')}
+                                            src={img_filter}
+                                        />
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div className="main_contents_post">
                             <div className="main_post">
@@ -83,7 +126,7 @@ class MainPage extends React.Component {
                                 <div className="main_post_detail">
                                     <span>userName</span> <label><img src={like}/><span>34</span><img src={view}/><span>19</span></label>
                                 </div>
-                            </div>                
+                            </div>
                         </div>
                         <div className="main_contents_post">
                             <div className="main_post">
@@ -130,7 +173,7 @@ class MainPage extends React.Component {
                                     <span>userName</span> <label><img src={like}/><span>34</span><img src={view}/><span>19</span></label>
                                 </div>
                             </div>
-                           
+
                         </div>
                         <div className="main_contents_post">
                             <div className="main_post">
@@ -176,10 +219,11 @@ class MainPage extends React.Component {
                                 <div className="main_post_detail">
                                     <span>userName</span> <label><img src={like}/><span>34</span><img src={view}/><span>19</span></label>
                                 </div>
-                            </div>                           
+                            </div>
                         </div>
                     </div>
                 </div>
+                <TermsModal isOpen={this.state.isModalOpen} closeModal={this.function.main_closeModal.bind(this)} page={this} />
             </div>
         )
     }

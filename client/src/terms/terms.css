@@ -1,0 +1,160 @@
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.6);
+    overflow-y: scroll;
+    width: 100%;
+
+}
+
+.terms_Modal{
+    width: 450px;
+    height: 727px;
+    background-color: white;
+    position: relative;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin: 50px auto;
+}
+
+
+.terms_modalContents {
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+    padding: 0 20px 32px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.terms_content{
+    width: 414px;
+    height: 760px;
+
+    border-radius: 10px;
+    border: 1px solid #000000;
+    padding:0 18px 0 18px;
+}
+
+.terms_term{
+    font-size: 18px;
+    font-weight: bold;
+    color:#0000FF;
+    text-align: center;
+
+
+}
+
+.terms_titles{
+    font-size:14px;
+    color:#4A4A4A;
+    font-weight: bold;
+    margin:29px 0 15px 0;
+}
+
+.terms_titles2{
+    font-size:14px;
+    color:#4A4A4A;
+    font-weight: bold;
+    margin:24px 0 15px 0;
+}
+
+.terms_contents{
+    border: 0.5px solid #B5B4B5;
+    width: 414px;
+    height: 110px;
+    overflow-y: scroll;
+
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.terms_check_agreement{
+    display: flex;
+    justify-content: flex-end;
+    margin-top:8px;
+
+}
+
+.terms_check_agreement > div{
+    margin-right: 14px;
+    color:#B5B4B5;
+}
+
+.terms_check_agreement > input{
+    margin:5px 4px 0 8px;
+
+}
+
+.terms_warning{
+    margin-top:32px;
+
+    text-align: right;
+    color:#ff0000;
+    font-size: 10px;
+}
+
+.terms_foot{
+    display: flex;
+    font-size:12px;
+    margin-top: 30px;
+}
+
+.terms_foot > span{
+    margin-top:12px;
+    color:#0000FF;
+    font-weight: bold;
+}
+
+.terms_foot > input{
+    margin: 16px 4px 0 14px;
+}
+
+.terms_all_agreement{
+    margin-top:12px;
+}
+
+.terms_submit{
+    min-width: 65px !important;
+    height: 36px !important;
+
+    margin-left: 117px;
+    margin-right: 0;
+}
+
+.terms_xIcon{
+    padding-top: 7px;
+    width: 14px;
+    height: 14px;
+    float: right;
+
+}
+
+.terms_header{
+    padding-top:23px;
+    align-items: center;
+    justify-content: center;
+}
+
+input[type='radio'],
+
+input[type='radio']:checked {
+    appearance: none;
+    width: 0.9rem;
+    height: 0.9rem;
+    border-radius: 100%;
+}
+
+input[type='radio'] {
+    background-color: white;
+    border: 0.5px solid #B5B4B5;
+}
+input[type='radio']:checked {
+    background-color: #0000FF;
+}
+

@@ -8,12 +8,4 @@ const http=new HttpClient(serverURl);
 export default class MainFuntion {
     //function 작성하기
 
-    main_openModal(m_page){
-        m_page.setState({isModalOpen: true});
-    };
-
-    main_closeModal(m_page){
-        m_page.setState({ isModalOpen: false });
-    };
-
 }

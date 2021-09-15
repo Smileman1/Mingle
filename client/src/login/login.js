@@ -10,6 +10,7 @@ import classNames from 'classnames';
 
 //Logo 이미지가 들어올 부분
 import LogoImg from '../img/tmp.png';
+import TermsModal from "../terms/terms";
 
 
 class LoginPage extends React.Component {
@@ -23,23 +24,26 @@ class LoginPage extends React.Component {
             login_pw : "",
 
             login_id_type : "hover",
-            login_pw_type : "hover"
+            login_pw_type : "hover",
+
+            isModalOpen: false,
         }
     }
 
     render() {
         return (
             <div className='main'>
-                <div className='login_main'>
+                <div className='login_content'>
                     <div className="login_logo_area">
                         <img
+                            className='login_logo_size'
                             src={ LogoImg }
                             alt='testA' />
                     </div>
-                    <div className='login_content'>
+                    <div>
                         <div>
                             <div>
-                                <div className={classNames('font-24b', 'login_margin_bottom')}>
+                                <div className={classNames('font-24b')}>
                                     로그인
                                 </div>
                                 <div className= {this.state.login_id_type==="error" ? classNames('font-14b','font-color-r', 'login_margin_top') : classNames('font-14n','font-color-g', 'login_margin_top')}>
@@ -92,7 +96,7 @@ class LoginPage extends React.Component {
                                 </div>
 
                                 <div className="login_footer_group">
-                                <button className={classNames('font-14b','font-color-bu','login_footer_submit')}><Link to='/login/terms'>회원가입</Link></button>
+                                <button className={classNames('font-14b','font-color-bu','login_footer_submit')} onClick={this.function.login_openModal.bind(this)}>회원가입</button>
                                 <button className="login_footer_findID"/>
                                 <button className={classNames('font-14n','login_footer','login_footer_findID')}><Link to='/login/id'>아이디 찾기</Link></button>
                                 <button className={classNames('font-14n','login_footer','login_footer_findPW')}><Link to='/login/pw'>비밀번호 찾기</Link></button>
@@ -101,6 +105,7 @@ class LoginPage extends React.Component {
                         </div>
                     </div>
                 </div>
+                <TermsModal isOpen={this.state.isModalOpen} closeModal={this.function.login_closeModal.bind(this)} page={this} />
             </div>
         )
     }

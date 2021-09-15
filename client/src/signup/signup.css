@@ -4,6 +4,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    min-height: 100vh;
     flex-direction: column;
 }
 .signup_content > div {
@@ -19,9 +20,11 @@
 .signup_logo_area {
     display: flex;
     justify-content: center;
-    align-items: center;
+}
+.signup_logo_size{
+    width: 158px;
+    height: 92px;
     margin-bottom: 77px;
-    margin-top: 105px;
 }
 
 /*디자인적으로 margin값이 필요할때 사용하는 부분 (bottom)*/

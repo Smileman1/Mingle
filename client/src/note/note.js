@@ -18,7 +18,7 @@ import img_profile_S from '../public/icon/etc..px/16px my menu.png'
 
 import background_img_Dog from '../img/dog.jpg'
 
-class MainPage extends React.Component {
+class NotePage extends React.Component {
 
     constructor() {
         super(undefined);
@@ -62,8 +62,8 @@ class MainPage extends React.Component {
                             <div className={classNames('note_title_info', 'margin-b-6')}>
                                 <span>
                                     <img
-                                        src={img_profile_S}
-                                        className={classNames('note_profileImage_margin','margin-r-8', 'margin-l-13')}
+                                        src={img_profile_B}
+                                        className={classNames('note_profileImage_margin','margin-r-8', 'margin-l-13','note_header_profile_img')}
                                     />
                                     <span className={classNames('font-color-w', 'font-14n', 'margin-r-11')}>
                                         아무개
@@ -85,6 +85,7 @@ class MainPage extends React.Component {
 
                         <div className={classNames('note_info', 'margin-t-10')}>
                             <img
+                                className={classNames('margin-r-4')}
                                 src={img_like}
                                 alt={'like'}
                                 onClick={this.function.note_like_action.bind(this)}
@@ -93,7 +94,7 @@ class MainPage extends React.Component {
                             <img
                                 src={img_comments}
                                 alt={'comments'}
-                                className={'margin-l-18'}
+                                className={classNames('margin-l-18', 'margin-r-4')}
                                 onClick={this.function.note_comments_action.bind(this)}
                             />
                             17
@@ -126,6 +127,7 @@ class MainPage extends React.Component {
                                 </div>
                                 <label>
                                     <img
+                                        className={classNames('margin-r-4')}
                                         src={img_handLike}
                                         alt={'handLike'}
                                         onClick={this.function.note_like_action.bind(this)}
@@ -136,7 +138,7 @@ class MainPage extends React.Component {
                                     <img
                                         src={img_handDislike}
                                         alt={'handDislike'}
-                                        className={'margin-t-4'}
+                                        className={classNames('margin-r-4','margin-t-4')}
                                         onClick={this.function.note_like_action.bind(this)}
                                     />
                                     <span className={'margin-r-59'}>
@@ -166,6 +168,7 @@ class MainPage extends React.Component {
                                 </div>
                                 <label>
                                     <img
+                                        className={classNames('margin-r-4')}
                                         src={img_handLike}
                                         alt={'handLike'}
                                         onClick={this.function.note_like_action.bind(this)}
@@ -176,7 +179,7 @@ class MainPage extends React.Component {
                                     <img
                                         src={img_handDislike}
                                         alt={'handDislike'}
-                                        className={'margin-t-4'}
+                                        className={classNames('margin-r-4','margin-t-4')}
                                         onClick={this.function.note_like_action.bind(this)}
                                     />
                                     <span className={'margin-r-59'}>
@@ -197,4 +200,4 @@ class MainPage extends React.Component {
     }
 }
 
-export default MainPage;
+export default NotePage;

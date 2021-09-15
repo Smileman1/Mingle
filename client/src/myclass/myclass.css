@@ -1,0 +1,302 @@
+/*메인 컨텐츠 작성 부분*/
+
+.profile_modal{
+    /* display: none; */
+}
+
+
+
+.myclass_body{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.myclass_body > div {
+    width: 1194px;
+    height: 100%;
+}
+
+.myclass_today{
+    margin-bottom: 107px;
+}
+
+.myclass_today_head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.myclass_today_save{
+    width: 50px;
+    height: 24px;
+    background-color: #0000ff;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.myclass_today_save > span{
+    font-size: 12px;
+    color:#ffffff;
+}
+
+.myclass_today_content_form > div{
+    padding:9px 7px;
+}
+
+.myclass_today_detail, .myclass_today_content{
+    display: flex;
+    align-items: center;
+    height: 43px;
+    background-color: #f0f0f0;
+}
+
+.myclass_today_detail{
+    margin-bottom: 7px;
+}
+
+.myclass_today_detail{
+    padding:0 7px;
+}
+
+.myclass_today_name, .myclass_today_content_title{
+    box-sizing: border-box;
+    width: 500px;
+    margin-right: 250px;
+    margin-left: 29px;
+}
+
+.myclass_today_time, .myclass_today_content_time{
+    text-align: center;
+    width: 100px;
+    margin-right: 70px;
+}
+.myclass_today_note, .myclass_today_content_note{
+    text-align: center;
+    width: 100px;
+    margin-right: 50px;
+}
+.myclass_today_check, .myclass_today_content_check{
+    text-align: center;
+    width: 55px;
+}
+.myclass_today_content_check > img{
+    width: 20px;
+    height: 20px;
+}
+
+
+.myclass_search{
+    display: flex;
+    height: 40px;
+    margin-right: 12px;
+    justify-content: center;
+    align-items: center;
+}
+
+.myclass_search_div{
+    line-height: 19px;
+    width: 100px;
+    height: 40px;
+    border-top: 1px solid #B5B4B5;
+    border-left: 1px solid #B5B4B5;
+    border-bottom: 1px solid #B5B4B5;
+    box-sizing: border-box;
+    border-radius: 20px 0px 0px 20px;
+    padding: 5px 3px;
+    text-indent: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+
+.myclass_head{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 27px;
+    border-bottom: 0.25px solid #4A4A4A;
+
+}
+
+.myclass_head_title{
+    font-size: 24px;
+    font-weight: 700;
+    margin-right: 54px;
+
+}
+.myclass_head_myclass{
+    margin-right: 47px;
+}
+
+.myclass_head_myclass , .myclass_head_enrollment{
+    font-size: 16px;
+    font-weight: 400;
+}
+
+
+.myclass_contents{
+    display: flex;
+    justify-content: space-between;
+    margin: 0px auto;
+    width: 1195px;
+    height: 100%;
+    flex-direction: column;
+
+    white-space: nowrap;
+}
+
+.myclass_today_title > span{
+    font-size: 24px;
+    font-weight: 400;
+}
+
+
+
+.myclass_contents_title{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 23px;
+}
+
+.myclass_contents_post{
+    display: flex;
+    margin-bottom: 81px;
+}
+
+.myclass_post{
+    cursor: pointer;
+    margin-right: 30px;
+}
+
+.myclass_post_title{
+    font-size:16px;
+    font-weight: 700;
+}
+
+.myclass_post_title_div{
+    margin-top:11px;
+    margin-bottom:40px;
+}
+
+.myclass_post_detail{
+    display: flex;
+    justify-content: space-between;
+}
+
+.myclass_post_detail > label {
+    display: flex;
+    align-items: center;
+}
+.myclass_post_detail > label > span{
+    font-size: 14px;
+    font-weight: 700;
+    margin-left:4px;
+    margin-right: 6px;
+}
+
+.myclass_post_detail > label > img{
+    width: 20px;
+    height: 20px;
+}
+
+
+.myclass_post_detail > label  > .myclass_detail_icon{
+    width: 16px;
+    height: 4px;
+    margin-right: 15px;
+}
+
+.myclass_post_detail > span{
+    font-size: 14px;
+    color:#4A4A4A;
+}
+
+.myclass_contents_popular > span{
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.myclass_contents_search{
+    border:1px solid #C4C4C4;
+    width: 161px;
+    height: 40px;
+    padding: 2px 2px 2px 10px;
+}
+
+.myclass_filter_area_img{
+    margin-right: 8px;
+}
+
+.myclass_search_div{
+    line-height: 19px;
+    width: 415px;
+    height: 40px;
+    border-top: 1px solid #B5B4B5;
+    border-left: 1px solid #B5B4B5;
+    border-bottom: 1px solid #B5B4B5;
+    box-sizing: border-box;
+    border-radius: 20px 0px 0px 20px;
+    padding: 5px 3px;
+    text-indent: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.myclass_search_bar{
+    line-height: 19px;
+    width: 506px;
+    box-sizing: border-box;
+    border: 0px;
+    padding: 0px 14px;
+}
+
+.myclass_searchBox_icon_area{
+    height: 40px;
+    border-top: 1px solid #B5B4B5;
+    border-right: 1px solid #B5B4B5;
+    border-bottom: 1px solid #B5B4B5;
+    box-sizing: border-box;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    background-color: #F0F0F0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: pointer;
+}
+
+.myclass_filter_area{
+    height: 40px;
+    border: 1px solid #C4C4C4;
+    box-sizing: border-box;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.myclass_filter_contain{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+.myclass_post_picture{
+    display: flex;
+    flex-direction: column;
+}
+
+.myclass_post_picture > progress{
+    width: 100%;
+}

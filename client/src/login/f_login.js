@@ -67,4 +67,12 @@ export default class LoginFuntion {
             return "error"
         return "hover"
     }
+
+    login_openModal() {
+        this.setState({isModalOpen: true});
+    };
+
+    login_closeModal(m_page){
+        m_page.setState({ isModalOpen: false });
+    };
 }

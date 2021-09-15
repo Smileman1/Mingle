@@ -1,0 +1,36 @@
+.findpw_content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+.findpw_content > div {
+    width: 420px;
+    height: 100%;
+}
+.findpw_content > div > div {
+    width: 100%;
+    height: 100%;
+}
+
+
+.findpw_margin_bottom {
+    margin-bottom: 68px;
+}
+
+.findpw_margin_top{
+    margin-top: 34px;
+}
+
+.findpw_submit_area{
+    margin-top : 90px;
+    margin-bottom: 74px;
+    width: 100%;
+}
+
+
+.findpw_content > div > div > button > a{
+    color:#ffffff;
+}
