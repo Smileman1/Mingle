@@ -39,6 +39,7 @@ class WritingPage extends React.Component {
                 <Header />
                 <div className='writing_content'>
 
+                    
                     <div className={classNames('writing_head_set','margin-b-12')}>
                         <div className={classNames('font-12n','writing_check_agreement')}>
                             <input type='radio'name='isPublic' value='yes'/>공개
