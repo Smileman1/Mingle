@@ -15,8 +15,10 @@ import view from '../img/view.png';
 
 import search from '../img/search.png';
 import img_filter from '../public/icon/etc..px/filter icon.png';
-import TermsModal from "../terms/terms";
+import TermsModal from "../module/terms/terms";
 
+import Main_serch_category from "../selectBox/main_search_category/main_serch_category";
+import Main_note_category from "../selectBox/main_note_category/main_note_category"
 
 class MainPage extends React.Component {
 
@@ -33,6 +35,7 @@ class MainPage extends React.Component {
             <div className='main'>
                 <Header main_openModal={this.function.main_openModal.bind(this)} m_page={this} />
                 {/* l-o-l */}
+
                 <div className="main_body">
 
                     <div className='main_search'>
@@ -43,40 +46,40 @@ class MainPage extends React.Component {
                             />
                             <input className={classNames('main_search_bar', 'font-14n')} placeholder="검색어를 입력하세요"/>
                         </div>
-                        <div className={'main_searchBox_icon_area'}>
-                            <div className={classNames('margin-l-13', 'margin-r-100')}>
-                                전체
-                            </div>
-                            <img
-                                src={img_filter}
-                            />
-                        </div>
+                        <Main_serch_category
+                            items={[
+                                { value: "전체", id: 1 },
+                                { value: "작성자", id: 2 },
+                                { value: "제목", id: 3 },
+                                { value: "내용", id: 4 }
+                            ]}
+                        />
                     </div>
 
                     <div className='main_contents'>
                         <div className="main_contents_title">
                             <div className="main_contents_popular"><span>인기 게시글</span></div>
                             <div className='main_filter_contain'>
-                                <div className={classNames('main_filter_area', 'margin-r-21')}>
-                                    <div className={classNames('font-14n', 'margin-l-16','margin-r-100')}>
-                                        전체
-                                    </div>
-                                    <div>
-                                        <img
-                                            className={classNames('margin-b-2')}
-                                            src={img_filter}
-                                        />
-                                    </div>
+                                <div className={classNames( 'margin-r-21')}>
+                                    <Main_note_category
+                                        items={[
+                                            { value: "전체", id: 1 },
+                                            { value: "1차", id: 2 },
+                                            { value: "분류", id: 3 },
+                                            { value: "내용", id: 4 }
+                                        ]}
+                                    />
                                 </div>
 
-                                <div className={classNames('main_filter_area')}>
-                                    <div className={classNames('font-14n', 'margin-l-16','margin-r-100')}>
-                                        전체
-                                    </div>
-                                    <div>
-                                        <img
-                                            className={classNames('margin-b-2')}
-                                            src={img_filter}
+                                <div>
+                                    <div className={classNames('font-14n', 'margin-l-16')}>
+                                        <Main_note_category
+                                            items={[
+                                                { value: "전체", id: 1 },
+                                                { value: "2차", id: 2 },
+                                                { value: "분류", id: 3 },
+                                                { value: "내용", id: 4 }
+                                            ]}
                                         />
                                     </div>
                                 </div>
@@ -85,7 +88,12 @@ class MainPage extends React.Component {
                         <div className="main_contents_post">
                             <div className="main_post">
                                 <div>
-                                    <img src={T1}/>
+                                    <Link to='/note'>
+                                    <img
+                                        className='main_title_img'
+                                        src={T1}
+                                    />
+                                    </Link>
                                 </div>
                                 <div className="main_post_title_div">
                                     <span className="main_post_title">유학 기초부터 실전까지</span>
@@ -96,7 +104,12 @@ class MainPage extends React.Component {
                             </div>
                             <div className="main_post">
                                 <div>
-                                    <img src={T2}/>
+                                    <Link to='/note'>
+                                        <img
+                                            className='main_title_img'
+                                            src={T2}
+                                        />
+                                    </Link>
                                 </div>
                                 <div className="main_post_title_div">
                                     <span className="main_post_title">유학 기초부터 실전까지</span>
@@ -107,7 +120,12 @@ class MainPage extends React.Component {
                             </div>
                             <div className="main_post">
                                 <div>
-                                    <img src={T3}/>
+                                    <Link to='/note'>
+                                        <img
+                                            className='main_title_img'
+                                            src={T3}
+                                        />
+                                    </Link>
                                 </div>
                                 <div className="main_post_title_div">
                                     <span className="main_post_title">유학 기초부터 실전까지</span>
@@ -118,7 +136,12 @@ class MainPage extends React.Component {
                             </div>
                             <div className="main_post">
                                 <div>
-                                    <img src={T4}/>
+                                    <Link to='/note'>
+                                        <img
+                                            className='main_title_img'
+                                            src={T4}
+                                        />
+                                    </Link>
                                 </div>
                                 <div className="main_post_title_div">
                                     <span className="main_post_title">유학 기초부터 실전까지</span>
@@ -131,7 +154,12 @@ class MainPage extends React.Component {
                         <div className="main_contents_post">
                             <div className="main_post">
                                 <div>
-                                    <img src={T2}/>
+                                    <Link to='/note'>
+                                        <img
+                                            className='main_title_img'
+                                            src={T2}
+                                        />
+                                    </Link>
                                 </div>
                                 <div className="main_post_title_div">
                                     <span className="main_post_title">유학 기초부터 실전까지</span>
@@ -142,7 +170,12 @@ class MainPage extends React.Component {
                             </div>
                             <div className="main_post">
                                 <div>
-                                    <img src={T1}/>
+                                    <Link to='/note'>
+                                        <img
+                                            className='main_title_img'
+                                            src={T1}
+                                        />
+                                    </Link>
                                 </div>
                                 <div className="main_post_title_div">
                                     <span className="main_post_title">유학 기초부터 실전까지</span>
@@ -153,7 +186,12 @@ class MainPage extends React.Component {
                             </div>
                             <div className="main_post">
                                 <div>
-                                    <img src={T4}/>
+                                    <Link to='/note'>
+                                        <img
+                                            className='main_title_img'
+                                            src={T4}
+                                        />
+                                    </Link>
                                 </div>
                                 <div className="main_post_title_div">
                                     <span className="main_post_title">유학 기초부터 실전까지</span>
@@ -164,7 +202,12 @@ class MainPage extends React.Component {
                             </div>
                             <div className="main_post">
                                 <div>
-                                    <img src={T3}/>
+                                    <Link to='/note'>
+                                        <img
+                                            className='main_title_img'
+                                            src={T3}
+                                        />
+                                    </Link>
                                 </div>
                                 <div className="main_post_title_div">
                                     <span className="main_post_title">유학 기초부터 실전까지</span>
@@ -178,7 +221,12 @@ class MainPage extends React.Component {
                         <div className="main_contents_post">
                             <div className="main_post">
                                 <div>
-                                    <img src={T1}/>
+                                    <Link to='/note'>
+                                        <img
+                                            className='main_title_img'
+                                            src={T1}
+                                        />
+                                    </Link>
                                 </div>
                                 <div className="main_post_title_div">
                                     <span className="main_post_title">유학 기초부터 실전까지</span>
@@ -189,7 +237,12 @@ class MainPage extends React.Component {
                             </div>
                             <div className="main_post">
                                 <div>
-                                    <img src={T2}/>
+                                    <Link to='/note'>
+                                        <img
+                                            className='main_title_img'
+                                            src={T2}
+                                        />
+                                    </Link>
                                 </div>
                                 <div className="main_post_title_div">
                                     <span className="main_post_title">유학 기초부터 실전까지</span>
@@ -200,7 +253,12 @@ class MainPage extends React.Component {
                             </div>
                             <div className="main_post">
                                 <div>
-                                    <img src={T3}/>
+                                    <Link to='/note'>
+                                        <img
+                                            className='main_title_img'
+                                            src={T3}
+                                        />
+                                    </Link>
                                 </div>
                                 <div className="main_post_title_div">
                                     <span className="main_post_title">유학 기초부터 실전까지</span>
@@ -211,7 +269,12 @@ class MainPage extends React.Component {
                             </div>
                             <div className="main_post">
                                 <div>
-                                    <img src={T4}/>
+                                    <Link to='/note'>
+                                        <img
+                                            className='main_title_img'
+                                            src={T4}
+                                        />
+                                    </Link>
                                 </div>
                                 <div className="main_post_title_div">
                                     <span className="main_post_title">유학 기초부터 실전까지</span>

@@ -167,6 +167,17 @@ export default class SignUpFuntion {
             this.state.signup_pwCheck_type === "active" &&
             this.state.signup_email_type === "active") {
             alert("입력값에 문제가 없습니다.")
+            //서버와 데이터베이스 연결하기 위한 구문 작성
+
+            http.fetch('/auth/signup', {
+                method: 'POST',
+                body: JSON.stringify({ 'username':'아이디전송' , 'password': '12323132' , 'name':'김동욱' , 'email':'kdo6338@naver.com' })
+            }).then(result => {
+                console.log('통신 결과값: ', result);
+            }).catch(e => {
+                console.log('error 발생: ',e);
+            });
+
         }else{
             alert("다시 입력해주세요.")
         }

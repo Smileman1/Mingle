@@ -46,8 +46,6 @@
     font-weight: bold;
     color:#0000FF;
     text-align: center;
-
-
 }
 
 .terms_titles{
@@ -132,7 +130,6 @@
     width: 14px;
     height: 14px;
     float: right;
-
 }
 
 .terms_header{
@@ -148,6 +145,7 @@ input[type='radio']:checked {
     width: 0.9rem;
     height: 0.9rem;
     border-radius: 100%;
+    margin-right: 0.1rem;
 }
 
 input[type='radio'] {

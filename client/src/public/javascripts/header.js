@@ -2,6 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import LogoImg from '../../img/tmp.png';
 import './head.css';
+import classNames from "classnames";
+
 
 import * as headerFuntion from './f_header.js';
 
@@ -10,7 +12,6 @@ import Profile from '../icon/etc..px/48px my menu.png'
 import Myclass from '../icon/12px/myclass.png'
 import Mypage from '../icon/12px/mypage.png'
 import Mypost from '../icon/12px/mypost.png'
-import classNames from "classnames";
 
 
 
@@ -34,6 +35,7 @@ export default function Header({main_openModal, m_page}){
                 <button className={classNames("public_brandblue_btn", "margin-t-4")}><Link className={classNames('font-14n', 'font-color-w')} to='/login'>Log in</Link></button>
                 <button className="profile_button" onClick={()=>headerFuntion.profile_detail()}>
                     <img className={classNames('header_profile_menu_first','margin-l-14')} src={Profile}/>
+
                     <div id="profile_modal" className="profile_modal">
                         <div className="profile_modal_head">
                             <img className='header_profile_menu' src={Profile}/>

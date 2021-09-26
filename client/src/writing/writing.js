@@ -13,6 +13,7 @@ import img_link from "../public/icon/16px/link_icon.png"
 import img_file from "../public/icon/16px/file_icon.png"
 import img_search from '../public/icon/etc..px/search icon.png';
 import img_filter from '../public/icon/etc..px/filter icon.png';
+import Write_search_category from '../selectBox/write_search_category/write_search_category'
 
 
 import 'codemirror/lib/codemirror.css';
@@ -39,7 +40,6 @@ class WritingPage extends React.Component {
                 <Header />
                 <div className='writing_content'>
 
-                    
                     <div className={classNames('writing_head_set','margin-b-12')}>
                         <div className={classNames('font-12n','writing_check_agreement')}>
                             <input type='radio'name='isPublic' value='yes'/>공개
@@ -98,24 +98,31 @@ class WritingPage extends React.Component {
                             </div>
                         </div>
 
-                        <div className={classNames('writing_filter_area')}>
+                        <div>
                             <div className={classNames('font-14n', 'margin-l-14')}>
-                                전체
+                                <Write_search_category
+                                    items={[
+                                        { value: "전체", id: 1 },
+                                        { value: "찾는", id: 2 },
+                                        { value: "내용", id: 3 },
+                                        { value: "입니다", id: 4 }
+                                    ]}
+                                />
                             </div>
-                            <div>
-                                <img src={img_filter} className={classNames('writing_filter_icon', 'margin-b-4')}/>
-                            </div>
+
                         </div>
 
                     </div>
-                    <div>
+                    <div className='writing_editor'>
                         <Editor
                             initialValue="Mingle"
                             previewStyle="vertical"
                             height="600px"
+
                             initialEditType="markdown"
                             useCommandShortcut={true}
                             ref={this.editorRef}
+
                         />
                     </div>
                 </div>

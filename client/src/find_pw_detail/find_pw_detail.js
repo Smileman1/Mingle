@@ -35,13 +35,13 @@ class FindPwDetailPage extends React.Component {
 
                             <div className={classNames('font-14n', 'font-color-g', 'findpw_margin_top')}>
                                 회원가입 시 입력한 이메일
-                                <input className={classNames('public_model_search_bar', 'font-14n')}type="hover"/>
+                                <input className={classNames('public_model_search_bar', 'font-14n')}/>
                                 <button className="findpw_sendCode">인증번호 발송</button>
                             </div>
 
                             <div className={classNames('font-14n', 'font-color-g', 'findpw_margin_top')}>
                                 인증번호
-                                <input className={classNames('public_model_search_bar', 'font-14n')}type="hover"/>
+                                <input className={classNames('public_model_search_bar', 'font-14n')}/>
                             </div>
                             <div className='findpw_detail_confirmcode'>
                                 <div>잘못된 인증번호입니다.</div><span>제한시간 3분</span>
@@ -51,12 +51,12 @@ class FindPwDetailPage extends React.Component {
 
                             <div className={classNames('font-14n', 'font-color-g', 'findpw_margin_top')}>
                                 변경할 비밀번호
-                                <input className={classNames('public_model_search_bar', 'font-14n')}type="hover"/>
+                                <input className={classNames('public_model_search_bar', 'font-14n')}/>
                             </div>
 
                             <div className={classNames('font-14n', 'font-color-g', 'findpw_margin_top')}>
                                 비밀번호 확인
-                                <input className={classNames('public_model_search_bar', 'font-14n')}type="hover"/>
+                                <input className={classNames('public_model_search_bar', 'font-14n')}/>
                             </div>
                             <div className='findpw_detail_confirmPw'>
                                 <div>다시 확인해 주세요.</div>

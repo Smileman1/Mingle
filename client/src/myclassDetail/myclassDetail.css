@@ -6,7 +6,7 @@
 
 
 
-.myclass_body{
+.myclass_body_detail{
     width: 100%;
     display: flex;
     justify-content: center;
@@ -14,23 +14,38 @@
     flex-direction: column;
 }
 
-.myclass_body > div {
+.myclass_body_detail > div {
     width: 1194px;
     height: 100%;
 }
 
-.myclass_today{
+.myclass_details{
     margin-bottom: 107px;
 }
 
-.myclass_today_head{
+.myclass_head_details{
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 20px;
 }
 
-.myclass_today_save{
+.myclass_head_details > div:nth-last-child(1){
+    display: flex;
+    gap:9px;
+}
+
+.myclass_head_details > div:nth-last-child(1) > div{
+    cursor: pointer;
+}
+.myclass_days{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap:4px;
+}
+
+.myclass_delete_detail, .myclass_edit_detail{
     width: 50px;
     height: 24px;
     background-color: #0000ff;
@@ -38,74 +53,143 @@
     text-align: center;
 }
 
-.myclass_today_save > span{
+.myclass_edit_detail{
+    background-color: #ffffff;
+    border:1px solid #B5B4B5
+}
+
+.myclass_delete_detail > span{
     font-size: 12px;
     color:#ffffff;
 }
 
-.myclass_today_content_form > div{
+.myclass_today_content_form_detail > div{
     padding:9px 7px;
 }
 
-.myclass_today_detail, .myclass_today_content{
+.myclass_detail_details, .myclass_content_detail{
     display: flex;
     align-items: center;
-    height: 43px;
+    justify-content: space-between;
+    height: 77px;
     background-color: #f0f0f0;
 }
 
-.myclass_today_detail{
+.myclass_detail_details{
     margin-bottom: 7px;
 }
 
-.myclass_today_detail{
-    padding:0 7px;
-}
-
-.myclass_today_name, .myclass_today_content_title, .myclass_detail_btn{
-    box-sizing: border-box;
-    width: 500px;
-    margin-right: 250px;
-    margin-left: 29px;
-}
-
-.myclass_detail_btn{
+.myclass_class_names{
     display: flex;
+    align-items: center;
 }
 
-.myclass_today_content_title{
+.myclass_detail_details{
+    padding:0 17px;
+}
+
+.myclass_name_detail {
+    box-sizing: border-box;
+    /* width: 500px; */
+    margin-right: 30px;
+    margin-left: 9px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.myclass_tcontent_detail{
+    color:#4a4a4a;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.myclass_today_content_title_detail{
     cursor: pointer;
 }
 
-.myclass_today_time, .myclass_today_content_time{
+.myclass_content_detail {
     text-align: center;
-    width: 100px;
     margin-right: 70px;
 }
-.myclass_today_note, .myclass_today_content_note{
+.myclass_note_detail {
     text-align: center;
-    width: 100px;
-    margin-right: 50px;
+    color:#4A4A4A;
+    font-size: 14px;
+    font-weight: 400;
 }
-.myclass_today_check, .myclass_today_content_check{
+
+.myclass_note_detail > span{
+    color:#000000;
+}
+.myclass_check_detail{
     text-align: center;
     width: 55px;
+
+    font-size: 18px;
+    font-weight: 700;
+    color:#4A4A4A;
 }
-.myclass_today_content_check > img{
+
+.myclass_details_schedule_per{
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    margin-right: 10px;
+}
+
+.myclass_details_schedule_per > span{
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.myclass_schedule_de{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #B5B4B5;
+    padding: 15px;
+}
+.myclass_schedule_week{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.myclass_details_schedule_per > progress{
+    width: 307px;
+    height: 20px;
+}
+
+.myclass_schedule_time{
+    margin-left: 10px;
+}
+
+.myclass_schedule_time > div:nth-last-child(1){
+    margin-bottom: 0;
+}
+
+.myclass_schedule_week > img{
+    width: 30px;
+    height: 30px;
+    margin-right: 15px;
+}
+
+
+.myclass_today_content_check_detail > img{
     width: 20px;
     height: 20px;
 }
 
 
-.myclass_search{
+.myclass_search_detail{
     display: flex;
     height: 40px;
-    margin-right: 12px;
     justify-content: center;
     align-items: center;
 }
 
-.myclass_search_div{
+.myclass_search_div_detail{
     line-height: 19px;
     width: 100px;
     height: 40px;
@@ -125,7 +209,7 @@
 
 
 
-.myclass_head{
+.myclass_head_detail{
     display: flex;
     align-items: center;
     margin-bottom: 20px;
@@ -134,29 +218,24 @@
 
 }
 
-.myclass_head_title{
+.myclass_head_title_detail{
     font-size: 24px;
     font-weight: 700;
     margin-right: 54px;
 
 }
-.myclass_head_myclass{
+.myclass_head_myclass_detail{
     margin-right: 47px;
     color: #0000FF;
 }
 
-.myclass_head_myclass , .myclass_head_enrollment{
+.myclass_head_myclass_detail , .myclass_head_enrollment_detail{
     font-size: 16px;
     font-weight: 400;
-    background-color: white;
-    cursor: pointer;
 }
 
-.myclass_head_enrollment{
 
-}
-
-.myclass_contents{
+.myclass_contents_detail{
     display: flex;
     justify-content: space-between;
     margin: 0px auto;
@@ -167,75 +246,66 @@
     white-space: nowrap;
 }
 
-.myclass_today_title > span{
+.myclass_title_detail > span{
     font-size: 24px;
     font-weight: 400;
 }
 
 
 
-.myclass_contents_title{
+.myclass_contents_title_detail{
     display: flex;
     justify-content: space-between;
     width: 100%;
     margin-bottom: 23px;
 }
 
-.myclass_contents_post{
+.myclass_contents_title_detail > div:nth-child(1){
+    display: flex;
+    align-items: center;
+}
+
+.myclass_contents_post_details{
     display: flex;
     margin-bottom: 81px;
 }
 
-.myclass_post{
+
+
+.myclass_post_details {
     cursor: pointer;
     margin-right: 30px;
 }
 
-.myclass_post_title{
+
+.myclass_post_title_detail{
     font-size:16px;
     font-weight: 700;
 }
 
-.myclass_post_title_div{
+.myclass_post_title_div_detail{
     margin-top:11px;
     margin-bottom:40px;
 }
 
-.myclass_post_detail{
-    display: flex;
-    justify-content: space-between;
-}
 
-.myclass_post_detail > label {
+.myclass_post_detail_details > label {
     display: flex;
     align-items: center;
 }
-.myclass_post_detail > label > span{
-    font-size: 14px;
-    font-weight: 700;
-    margin-left:4px;
-    margin-right: 6px;
+
+
+.myclass_contents_detail_header {
+    margin-right: 9px;
 }
 
-.myclass_post_detail > label > img{
-    width: 20px;
-    height: 20px;
-}
-
-
-.myclass_post_detail > label  > .myclass_detail_icon{
-    width: 16px;
-    height: 4px;
-    margin-right: 15px;
-}
-
-.myclass_post_detail > span{
-    font-size: 14px;
-    color:#4A4A4A;
-}
-
-.myclass_contents_popular > span{
+.myclass_contents_detail_header > span{
     font-size: 24px;
+    font-weight: 400;
+}
+
+.myclass_contents_warning{
+    color:#4a4a4a;
     font-weight: 400;
 }
 
@@ -246,11 +316,11 @@
     padding: 2px 2px 2px 10px;
 }
 
-.myclass_filter_area_img{
+.myclass_filter_area_img_detail{
     margin-right: 8px;
 }
 
-.myclass_search_div{
+.myclass_search_div_detail{
     line-height: 19px;
     width: 415px;
     height: 40px;
@@ -266,7 +336,7 @@
     align-items: center;
 }
 
-.myclass_search_bar{
+.myclass_search_bar_detail{
     line-height: 19px;
     width: 506px;
     box-sizing: border-box;
@@ -274,7 +344,7 @@
     padding: 0px 14px;
 }
 
-.myclass_searchBox_icon_area{
+.myclass_searchBox_icon_area_detail{
     height: 40px;
     border-top: 1px solid #B5B4B5;
     border-right: 1px solid #B5B4B5;
@@ -289,7 +359,7 @@
     cursor: pointer;
 }
 
-.myclass_filter_area{
+.myclass_filter_area_detail{
     height: 40px;
     border: 1px solid #C4C4C4;
     box-sizing: border-box;
@@ -299,18 +369,35 @@
     cursor: pointer;
 }
 
-.myclass_filter_contain{
+.myclass_filter_contain_detail{
     display: flex;
     justify-content: flex-start;
     align-items: center;
 }
 
 
-.myclass_post_picture{
+.myclass_post_picture_detail{
     display: flex;
     flex-direction: column;
 }
 
-.myclass_post_picture > progress{
+.myclass_post_picture_detail > progress{
     width: 100%;
+}
+
+
+.myclass_post_detail_details{
+    display: flex;
+    justify-content: space-between;
+}
+
+.myclass_post_detail_details > label > span{
+    font-size: 14px;
+    font-weight: 700;
+    margin-left:4px;
+    margin-right: 10px;
+}
+
+.myclass_post_detail_details > span{
+    color:#B5B4B5;
 }

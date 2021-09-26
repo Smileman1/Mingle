@@ -10,7 +10,7 @@ import classNames from 'classnames';
 
 //Logo 이미지가 들어올 부분
 import LogoImg from '../img/tmp.png';
-import TermsModal from "../terms/terms";
+import TermsModal from "../module/terms/terms";
 
 
 class LoginPage extends React.Component {

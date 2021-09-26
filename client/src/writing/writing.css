@@ -161,6 +161,6 @@
     z-index: 1;
 }
 
-.aaa{
-    color: red;
+.writing_editor{
+    z-index: -1;
 }

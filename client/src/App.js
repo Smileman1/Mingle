@@ -12,6 +12,7 @@ import findPwPageDetail from "./find_pw_detail/find_pw_detail";
 import MainPage from './main/main.js';
 
 import MyClass from './myclass/myclass.js';
+import MyClassDetail from './myclassDetail/myclassDetail.js';
 
 
 //공통적으로 사용하는 css 모음
@@ -32,6 +33,7 @@ function App() {
       <Route path='/note' exact={true} component={NotePage}></Route>
       <Route path='/writing' exact={true} component={WritingPage}></Route>
       <Route path='/myclass' exact={true} component={MyClass}></Route>
+      <Route path='/myclassDetail' exact={true} component={MyClassDetail}></Route>
   </HashRouter>
 }
 

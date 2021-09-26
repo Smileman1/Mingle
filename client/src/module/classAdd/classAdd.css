@@ -1,0 +1,238 @@
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.6);
+    overflow-y: scroll;
+    width: 100%;
+
+}
+
+.classAdd_Modal{
+    width: 500px;
+    height: 600px;
+    background-color: white;
+    position: relative;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin: 150px auto;
+}
+
+.classAdd_modalContents {
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+    padding: 0 30px 30px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.classAdd_xIcon{
+    width: 14px;
+    height: 14px;
+    float: right;
+
+}
+
+.classAdd_header{
+    padding-top:16px;
+    align-items: center;
+    justify-content: center;
+}
+
+.classAdd_big_search_bar{
+    width: 440px;
+    height: 20px;
+    background-color: var(--color-white);
+    border-bottom: 1px solid var(--color-mid-gray);
+    padding-left: 19px;
+    box-sizing: border-box;
+    font-size: 12px;
+}
+
+.classAdd_big_search_bar::placeholder{
+    font-size: 11px;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.classAdd_big_search_bar:hover{
+    border-bottom: 1px solid #4A4A4A;
+}
+
+.classAdd_big_search_bar:focus{
+    border-bottom: 1.5px solid #0000FF;
+}
+
+.classAdd_small_search_bar{
+    width: 200px;
+    height: 20px;
+    background-color: var(--color-white);
+    border-bottom: 1px solid var(--color-mid-gray);
+    padding-left: 19px;
+    box-sizing: border-box;
+    font-size: 12px;
+}
+
+.classAdd_small_search_bar::placeholder{
+    font-size: 11px;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.classAdd_small_search_bar:hover{
+    border-bottom: 1px solid #4A4A4A;
+}
+
+.classAdd_small_search_bar:focus{
+    border-bottom: 1.5px solid #0000FF;
+}
+
+.classAdd_line_area_detail{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-right: 40px;
+}
+
+.classAdd_line_area{
+    display: flex;
+}
+
+.classAdd_two_area{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.classAdd_big_select_box{
+    width: 200px;
+    height: 30px;
+    background: #F0F0F0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.classAdd_small_select_box{
+    width: 120px;
+    height: 30px;
+    background: #F0F0F0;
+    border-radius: 5px;
+}
+
+.classAdd_title_font{
+    font-size: 14px;
+    font-style: normal;
+    font-weight: bold;
+    color: #B5B4B5;
+    padding-top: 21px;
+}
+
+.classAdd_calender_img{
+    width: 16px;
+    height: 16px;
+    margin-left: 14px;
+    margin-top: 7px;
+    float: left;
+}
+
+.classAdd_calender_text{
+    color: #4A4A4A;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 17px;
+    float:right; display:inline-block;
+    margin-right: 10px;
+    margin-top: 6px;
+}
+
+.classAdd_time_img{
+    width: 16px;
+    height: 16px;
+    margin-left: 14px;
+    margin-top: 7px;
+    float: left;
+}
+
+.classAdd_time_text{
+    margin-top: 6px;
+    margin-right: 10px;
+    color: #4A4A4A;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 17px;
+    float: right;
+}
+
+.classAdd_week_text{
+    margin-top: 6px;
+    margin-left: 17px;
+    color: #4A4A4A;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 17px;
+    float: left;
+}
+
+.classAdd_text_button_line{
+    float: left;
+}
+
+.classAdd_plus_button_area{
+    border: 1.3px solid #B5B4B5;
+    box-sizing: border-box;
+    border-radius: 100px;
+    width: 40px;
+    height: 24px;
+    float: right;
+    margin-top: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.classAdd_plus_img{
+    width: 10px;
+    height: 11px;
+}
+
+.classAdd_filter_text{
+    color: #4A4A4A;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 17px;
+    margin-top: 5px;
+    margin-left: 19px;
+    float: left;
+}
+
+.classAdd_filter_img{
+    width: 8px;
+    height: 5px;
+    margin-top: 14px;
+    margin-right: 10px;
+    float: right;
+}
+
+.classAdd_summary_area{
+    border: 1px solid #B5B4B5;
+    box-sizing: border-box;
+    border-radius: 4px;
+    width: 440px;
+    height: 60px;
+    display: block;
+}
+
+.classAdd_summary_area:hover{
+    border: 1px solid #4A4A4A;
+}

@@ -10,7 +10,6 @@ export default class headerFuntion {
 }
 
 export function profile_detail(e){
-    console.log("aa");
     let profileModal = document.getElementsByClassName('profile_modal')[0];
     profileModal.classList.toggle("profile_modal_activation")
-} 
+}

@@ -37,13 +37,13 @@ class FindIdPage extends React.Component {
 
                                 <div className={classNames('font-14n', 'font-color-g', 'findid_margin_top')}>
                                     회원가입 시 입력한 이메일
-                                    <input className={classNames('public_model_search_bar', 'font-14n')}type="hover"/>
+                                    <input className={classNames('public_model_search_bar', 'font-14n')}/>
                                     <button className="findid_sendCode">인증번호 발송</button>
                                 </div>
 
                                 <div className={classNames('font-14n', 'font-color-g', 'findid_margin_top')}>
                                     인증번호
-                                    <input className={classNames('public_model_search_bar', 'font-14n')}type="hover"/>
+                                    <input className={classNames('public_model_search_bar', 'font-14n')}/>
                                 </div>
 
                                 <div>

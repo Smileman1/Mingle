@@ -4,7 +4,7 @@ import "./terms.css";
 import classNames from "classnames";
 import TermsFuntion from "./f_terms";
 
-import img_x from "../public/icon/16px/16px x .png"
+import img_x from "../../public/icon/16px/16px x .png"
 
 class TermsModal extends Component {
 
@@ -18,7 +18,6 @@ class TermsModal extends Component {
         return (
             <>
                 {isOpen ? (
-
                     <div className="modal">
                         <div >
                             <div className="terms_Modal">
@@ -80,10 +79,7 @@ class TermsModal extends Component {
                                             <input type='radio' name='fourthTerms' value='no' defaultChecked/><div className='terms_all_agreement'>아니오</div>
                                             <button className={classNames('public_brandblue_btn', 'terms_submit')}><Link className='font-14n font-color-w' to='/signup'>확인</Link></button>
                                         </div>
-
-
                                     </div>
-
                                 </div>
                             </div>
                         </div>

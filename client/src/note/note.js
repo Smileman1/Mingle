@@ -23,9 +23,11 @@ class NotePage extends React.Component {
     constructor() {
         super(undefined);
         this.function=new MainFuntion();
+
+        this.state = {
+            commentReply: false,
+        }
     }
-
-
 
     render() {
         return (
@@ -144,7 +146,7 @@ class NotePage extends React.Component {
                                     <span className={'margin-r-59'}>
                                         2
                                     </span>
-                                    <span className={'font-14b'}>
+                                    <span className={classNames('font-14b', 'note_comments_reply')}>
                                         답글
                                     </span>
                                 </label>
@@ -178,8 +180,8 @@ class NotePage extends React.Component {
                                     </span>
                                     <img
                                         src={img_handDislike}
-                                        alt={'handDislike'}
                                         className={classNames('margin-r-4','margin-t-4')}
+                                        className={'margin-t-4'}
                                         onClick={this.function.note_like_action.bind(this)}
                                     />
                                     <span className={'margin-r-59'}>
